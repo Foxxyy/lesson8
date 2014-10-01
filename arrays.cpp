@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cassert>
-//#include "arrays.h"
 
 
 // NOTE: you should move this `if` down as you start solving each task
@@ -62,14 +61,15 @@ void task_5_copy(int * arr1, int * arr2, int size)
 
 // Task 6
 // copy array `arr1` to array `arr2` of the same size
-void task_6_poor_copy(int * arr1, int * arr2)
+void task_6_poor_copy(int * arr1, int * arr2, int size)
 {
     // Hint: something wrong here; test this from main()
-    for(int i = 0; i < sizeof(arr1); ++i)
+    for(int i = 0; i < size; ++i)
     {
         arr2[i] = arr1[i];
     }
 }
+
 
 // Task 7
 // print array `arr`
