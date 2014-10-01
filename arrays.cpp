@@ -21,7 +21,7 @@ void task_1()
 void task_2()
 {
     int a[5] = {0};
-	assert(a[4]);
+	assert(!a[4]);
     //assert(!a[4]) or assert(a[4]) -- place here one of these and
     //                                 explain your choice in commit msg
 }
@@ -78,7 +78,7 @@ void task_7_print(int * arr, int size, char delim = ' ')
     // Hint: something wrong here; run this from main()
     for(int i = 0; i < size; ++i)
     {
-        std::cout << a[i] << delim;
+        std::cout << arr[i] << delim;
     }
 }
 
